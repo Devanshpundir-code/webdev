@@ -1,0 +1,148 @@
+------html------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="sky">
+        <h1>Racer car</h1>
+        <div id="road"><!-- <button id="but">go</button>--></div>
+        <div id="car">
+            <div class="wheel1"><img src="car_wheel_left.png" alt=""></div>
+            <div class="wheel2"><img src="car_wheel_left.png" alt=""></div>
+        </div>
+
+
+
+
+    </div>
+</body>
+<script> src=""</script>
+</html>
+
+
+-----css------
+
+*{
+    margin: 0px;
+}
+
+body{
+    overflow: hidden;
+}
+.sky{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    width: 439vh;
+    height: 600px;
+    position: absolute;
+}
+
+#road{
+
+background-image: url('track.png');
+background-repeat: repeat-x;
+height: 255px;
+width: 900vw;
+margin-top: 405px;
+position: absolute;
+animation: carmove linear 6s infinite;
+
+}
+
+
+
+#car{
+    background-image: url('car_body.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 149px;
+    width: 477px;
+    bottom: 0px;
+    margin-bottom: 3px;
+    background-size: 258px;
+    margin-left: 210px;
+    animation: shake linear 0.6s infinite;
+
+} 
+
+
+.wheel1 img{
+    position: relative;
+    width: 58px;
+    height: 62px;
+   
+    background-repeat: no-repeat;
+    left: 27px;
+    bottom: -22px;
+    animation: wheelrotation linear 0.6s infinite;
+
+}
+
+button{
+    position: absolute;
+    cursor: pointer;
+    font-size: 100px;
+    border: 4px solid white;
+}
+
+
+.wheel2 img{
+    position: relative;
+    width: 58px;
+    height: 62px;
+    background-size: 54px;
+    background-repeat: no-repeat;
+    left: 157px;
+    bottom: 40px;
+    animation: wheelrotation linear 0.6s infinite;
+}
+
+
+@keyframes wheelrotation {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes carmove{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+
+
+@keyframes shake{
+    0%{
+        transform: translateY(-3px);
+    }
+    50%{
+        transform: translateY(3px);
+    }
+    100%{
+        transform: translateY(-3px);
+    }
+}
+
+h1{
+    margin-left: 478px;
+    font-size: 100px;
+    font-family: fantasy;
+    color: white;
+    text-shadow: 4px 4px 9px black
+    ;
+}
+
+
+
+
+------javascript-------
+var audio = document.createElement('audio');
+audio.setAttribute('src', 'sound.mp3'); 
+audio.loop=true;
+audio.play();
