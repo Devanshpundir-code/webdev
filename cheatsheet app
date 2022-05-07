@@ -1,0 +1,97 @@
+----html------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="prism.css">
+    <script>src="prism.js"</script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>cheatsheet</title>
+</head>
+<body>
+    <nav>
+        <img src="logo.png" alt="logo">
+        <h2>Cheatsheet Copy From Here!🤣🔥</h2>
+    </nav>
+
+    <div class="container">
+        <ol>
+            <li>
+                Javascript
+                <pre class="language-js"><code>var i = 69;</code></pre>
+            </li>
+            <li>
+                Javascript
+                <pre class="language-js"><code>var i = 69;</code></pre>
+            </li>
+            <li>
+                Javascript
+                <pre class="language-js"><code>var i = 69;</code></pre>
+            </li>
+            <li>
+                Javascript
+                <pre class="language-js"><code>var i = 69;</code></pre>
+            </li>
+            <li>
+                Javascript
+                <pre class="language-js"><code>var i = 69;</code></pre>
+            </li>
+            <li>
+                Javascript
+                <pre class="language-js"><code>var i = 69;</code></pre>
+            </li>
+            <li></li>
+        </ol>
+    </div>
+</body>
+</html>
+
+
+
+
+-----css------
+*{
+    margin: 0px;
+}
+
+nav img{
+    height: 100px;
+    width: 100px;}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: aliceblue;
+}
+
+nav h2{
+    text-align: center;
+    margin-left: 9px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 376px;
+}
+
+
+.container{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: larger;
+    margin: auto;
+    width: 50vw;
+}
+
+
+
+
+-------javascript-------
+
+none
